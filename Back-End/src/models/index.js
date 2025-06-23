@@ -1,10 +1,10 @@
 sequelize.sync({ force: true })
   .then(() => {
-    console.log('✅ Base de datos sincronizada');
-    seedDatabase(); // Insertás los datos de ejemplo
+    console.log('Base de datos sincronizada');
+    seedDatabase(); 
   })
   .catch((err) => {
-    console.error('❌ Error al sincronizar la base de datos:', err);
+    console.error('Error al sincronizar la base de datos:', err);
   });
 
 
@@ -91,7 +91,7 @@ Envio.belongsTo(Pedido, {
   foreignKey: 'idPedido',
 });
 
-// Relación Muchos a Muchos: Pedido - Producto (a través de PedidoProducto)
+// Relación Muchos a Muchos: Pedido - Producto 
 Pedido.belongsToMany(Producto, {
   through: PedidoProducto,
   foreignKey: 'idPedido',
@@ -103,7 +103,7 @@ Producto.belongsToMany(Pedido, {
   otherKey: 'idPedido',
 });
 
-// Relación Muchos a Muchos: Carrito - Producto
+// Relación Muchos a Muchos: Carrito - Producto 
 Carrito.belongsToMany(Producto, {
   through: CarritoProducto,
   foreignKey: 'idCarrito',

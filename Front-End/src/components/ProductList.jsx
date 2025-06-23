@@ -7,7 +7,7 @@ import CardActions from '@mui/material/CardActions';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Chip from '@mui/material/Chip';
-import LocalOfferIcon from '@mui/icons-material/LocalOffer'; // ícono de oferta
+import LocalOfferIcon from '@mui/icons-material/LocalOffer'; 
 
 const products = [
   {

@@ -1,8 +1,7 @@
-// src/controllers/carritoProductoController.js
 
 import CarritoProducto from '../models/CarritoProducto.js';
 
-// Obtener todos los registros de carritos-productos
+// Obtener todos los registros 
 export const getCarritosProductos = async (req, res) => {
   try {
     const registros = await CarritoProducto.findAll();

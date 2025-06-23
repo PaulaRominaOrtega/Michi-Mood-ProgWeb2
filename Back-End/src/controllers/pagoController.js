@@ -1,4 +1,3 @@
-// src/controllers/pagoController.js
 
 import Pago from '../models/Pago.js';
 

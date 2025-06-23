@@ -1,4 +1,3 @@
-// src/controllers/pedidoProductoController.js
 
 import PedidoProducto from '../models/PedidoProducto.js';
 

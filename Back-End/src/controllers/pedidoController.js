@@ -1,4 +1,3 @@
-// src/controllers/pedidoController.js
 
 import Pedido from '../models/Pedido.js';
 

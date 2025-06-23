@@ -23,12 +23,11 @@ const PORT = process.env.PORT || 3001;
 
 const RESET_DATABASE = true;
 
-// Middlewares
 app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
 
-// Rutas - agrega todas las que tengas
+// Rutas 
 app.use('/api/categorias', categoriaRoutes);
 app.use('/api/administradores', administradorRoutes);
 app.use('/api/carritos', carritoRoutes);
@@ -42,14 +41,14 @@ app.use('/api/pedidosproductos', pedidoProductoRoutes);
 app.use('/api/productos', productoRoutes);
 app.use('/api/cuponesdescuentos', cuponesdescuentos);
 
-// Sincronizar base de datos
+
 const syncOptions = RESET_DATABASE ? { force: true } : {};
 
 sequelize.sync(syncOptions)
   .then(() => {
     console.log('Base de datos conectada y sincronizada');
     if (RESET_DATABASE) {
-      return seedDatabase();  // <--- Ejecutar seed
+      return seedDatabase();  
     }
     return Promise.resolve();
   })

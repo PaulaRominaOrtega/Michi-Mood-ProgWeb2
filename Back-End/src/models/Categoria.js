@@ -1,6 +1,6 @@
 
 import { DataTypes } from 'sequelize';
-import sequelize from '../db/connection.js'; // Nota la extensión .js
+import sequelize from '../db/connection.js'; 
 
 const Categoria = sequelize.define('Categoria', {
     id: {

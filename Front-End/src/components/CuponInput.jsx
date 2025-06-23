@@ -27,7 +27,7 @@ const CuponInput = () => {
         quitarCupon();
         setMensaje('El código de cupón ingresado no es válido o ha expirado.');
       }
-    // eslint-disable-next-line no-unused-vars
+    
     } catch (error) {
       quitarCupon();
       setMensaje('Error al validar el cupón. Intente más tarde.');

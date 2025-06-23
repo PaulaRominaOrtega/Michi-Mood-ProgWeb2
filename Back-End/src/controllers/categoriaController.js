@@ -1,4 +1,3 @@
-// src/controllers/categoriaController.js
 
 import Categoria from '../models/Categoria.js';
 
@@ -22,7 +21,7 @@ export const getCategorias = async (req, res) => {
     const categorias = await Categoria.findAll();
     return res.status(200).json(categorias);
   } catch (error) {
-    console.error('Error al obtener categorías:', error);  // Esto debe imprimir en consola
+    console.error('Error al obtener categorías:', error);  
     return res.status(500).json({ message: 'Error al obtener categorías', error: error.message });
   }
 };

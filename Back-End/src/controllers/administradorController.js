@@ -1,4 +1,3 @@
-// src/controllers/administradorController.js
 
 import Administrador from '../models/Administrador.js';
 

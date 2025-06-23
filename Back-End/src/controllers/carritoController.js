@@ -1,6 +1,6 @@
 import Carrito from '../models/Carrito.js';
 
-// Obtener todos los carritos (si querés usar activa, deberías agregar esa propiedad en el modelo)
+// Obtener todos los carritos
 export const getCarritos = async (req, res) => {
   try {
     const carritos = await Carrito.findAll();
@@ -69,7 +69,7 @@ export const updateCarrito = async (req, res) => {
   }
 };
 
-// Eliminar carrito (borrado físico real, ya que no hay campo "activa" en tu modelo)
+// Eliminar carrito 
 export const deleteCarrito = async (req, res) => {
   try {
     const { id } = req.params;

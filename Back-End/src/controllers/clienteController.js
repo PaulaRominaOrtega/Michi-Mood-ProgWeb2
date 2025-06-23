@@ -1,4 +1,3 @@
-// src/controllers/clienteController.js
 
 import Cliente from '../models/Cliente.js';
 

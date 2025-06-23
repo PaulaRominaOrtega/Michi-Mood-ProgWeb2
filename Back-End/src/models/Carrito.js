@@ -1,6 +1,6 @@
-// src/models/Cliente.js
+
 import { DataTypes } from 'sequelize';
-import sequelize from '../db/connection.js'; // Nota la extensión .js
+import sequelize from '../db/connection.js'; 
 
 const Carrito = sequelize.define('Carrito', {
     id: {

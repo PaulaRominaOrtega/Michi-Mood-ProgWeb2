@@ -1,4 +1,4 @@
-// src/routes/administradorRoutes.js
+
 import express from 'express';
 import {
   getAdministradores,
@@ -22,7 +22,7 @@ router.post('/', createAdministrador);
 // Actualizar un administrador por ID
 router.put('/:id', updateAdministrador);
 
-// Eliminar un administrador por ID (puede ser lógico o físico según tu controlador)
+// Eliminar un administrador por ID 
 router.delete('/:id', deleteAdministrador);
 
 export default router;

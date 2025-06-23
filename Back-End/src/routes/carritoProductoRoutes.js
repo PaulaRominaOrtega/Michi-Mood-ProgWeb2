@@ -5,7 +5,7 @@ import {
   createPedidoProducto,
   updatePedidoProducto,
   deletePedidoProducto
-} from '../controllers/pedidoProductoController.js';  // ojo que el controlador lo llamaste así
+} from '../controllers/pedidoProductoController.js'; 
 
 const router = express.Router();
 

@@ -3,13 +3,13 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
 const DetalleCategoria = () => {
-  const { id } = useParams(); // Obtiene el :id desde la URL
+  const { id } = useParams(); 
   const [category, setCategory] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get( `http://localhost:3001/api/categorias/${id}`) // Ajusta esta URL según tu backend
+    axios.get( `http://localhost:3001/api/categorias/${id}`)
       .then((res) => {
         setCategory(res.data);
         setLoading(false);
@@ -35,7 +35,7 @@ const DetalleCategoria = () => {
           style={{ maxWidth: '300px', borderRadius: '8px' }}
         />
       )}
-      {/* Podés agregar más detalles acá si tu backend los devuelve */}
+    
     </div>
   );
 };
